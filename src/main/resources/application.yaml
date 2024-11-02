@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: apron-home
+  datasource:
+    url: jdbc:postgresql://localhost:5432/apron-home-db
+    username: apron-home-user
+    password: this1isNotGood!
+
+server:
+  port: 8080
+
+retryTransfer:
+  numberOfAttempts: 5
+  delayInMillis: 500

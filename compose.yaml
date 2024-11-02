@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=apron-home-db'
+      - 'POSTGRES_PASSWORD=this1isNotGood!'
+      - 'POSTGRES_USER=apron-home-user'
+    ports:
+      - '5432:5432'
